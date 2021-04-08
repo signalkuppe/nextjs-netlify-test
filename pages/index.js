@@ -14,10 +14,4 @@ function Homepage() {
     );
 }
 
-export const getStaticProps = async ({ locale }) => ({
-    props: {
-        ...(await serverSideTranslations(locale, ['homepage'])),
-    },
-});
-
 export default Homepage;
